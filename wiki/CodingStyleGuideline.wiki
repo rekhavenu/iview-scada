@@ -1,12 +1,11 @@
 <br>
-
 = Introduction =
 
 This document is a guideline for iView´s contributors. Anyone who submit their code for iView should follow this guideline to keep iView's source code have a unify coding style.
 
 Most of the standards can be found in C# Coding Style Guide. 
 
-
+<br>
 = Details =
 
 == 1. Naming Conventions ==
