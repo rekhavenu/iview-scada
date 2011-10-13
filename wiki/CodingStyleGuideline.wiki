@@ -154,7 +154,7 @@ Use generic event handler EventHandler`<T>` if possible. Name event handlers wit
 || Interface || Pascal Casing Starts with I || - ||
 || Enum values || Pascal Casing || - ||
 || Enum type || Pascal Casing || - || 
-|| Events || Pascal Casing || Use EventHandler<T> as prototype if possible ||
+|| Events || Pascal Casing || Use {{{EventHandler<T>}}} as prototype if possible ||
 || Exception class || Pascal Casing || End with Exception ||
 || public Fields || Pascal Casing || - || 
 || Methods || Pascal Casing || - || 
