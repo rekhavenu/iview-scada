@@ -4,7 +4,7 @@
 
 = Introduction =
 
-This document is a guideline for MSNPSharp's contributors. Anyone who submit their code for MSNPSharp should follow this guideline to keep MSNPSharp's source code have a unify coding style.
+This document is a guideline for iView´s contributors. Anyone who submit their code for iView should follow this guideline to keep iView's source code have a unify coding style.
 
 Most of the standards can be found in C# Coding Style Guide. 
 
