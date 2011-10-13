@@ -1,0 +1,172 @@
+<br>
+<br>
+<br>
+
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+This document is a guideline for MSNPSharp's contributors. Anyone who submit their code for MSNPSharp should follow this guideline to keep MSNPSharp's source code have a unify coding style.
+
+Most of the standards can be found in C# Coding Style Guide. 
+
+
+= Details =
+
+== 1. Naming Conventions ==
+=== 1.1 Capitalization Styles ===
+==== 1.1.1 Pascal Casing ====
+
+This convention capitalizes the first character of each word (as in TestCounter).
+==== 1.1.2 Camel Casing ====
+
+This convention capitalizes the first character of each word except the first one. E.g. testCounter.
+==== 1.1.3 Upper case ====
+
+Only use all upper case for identifiers if it consists of an abbreviation which is one or two characters long, identifiers of three or more characters should use Pascal Casing instead. For Example:
+
+{{{
+public class Math
+{
+    public const PI = ...
+    public const E = ...
+    public const feigenBaumNumber = ...
+}
+}}}
+
+=== 1.2. Naming Guidelines ===
+
+Generally the use of underscore characters inside names and naming according to the guidelines for Hungarian notation are considered bad practice.
+
+Hungarian notation is a defined set of pre and postfixes which are applied to names to reflect the type of the variable. This style of naming was widely used in early Windows programming, but now is obsolete or at least should be considered deprecated. Using Hungarian notation is not allowed if you follow this guide.
+
+And remember: a good variable name describes the semantic not the type.
+
+An exception to this rule is GUI code. All fields and variable names that contain GUI elements like button should be postfixed with their type name without abbreviations. For example:
+
+{{{
+System.Windows.Forms.Button cancelButton;
+System.Windows.Forms.TextBox nameTextBox;
+}}}
+
+==== 1.2.1 Class Naming Guidelines ====
+
+Class names must be nouns or noun phrases. Use Pascal Casing see 1.1.1 Do not use any class prefix
+
+==== 1.2.2 Interface Naming Guidelines ====
+
+Name interfaces with nouns or noun phrases or adjectives describing behavior. For example: 
+
+{{{
+public interface IComponent
+{
+}
+
+public interface IEnumberable
+{
+}
+}}}
+
+Use Pascal Casing (see 1.1.1) Use I as prefix for the name, it is followed by a capital letter (first char of the interface name)
+
+==== 1.2.3 Enum Naming Guidelines ====
+
+Use Pascal Casing for enum value names and enum type names Don’t prefix (or suffix) a enum type or enum values Use singular names for enums Use plural name for bit fields. 
+
+==== 1.2.4 ReadOnly and Const Field Names ====
+
+Name static fields with nouns, noun phrases or abbreviations for nouns Use Pascal Casing (see 1.1.1)
+
+==== 1.2.5 Parameter/non const field Names ====
+
+Do use descriptive names, which should be enough to determine the variable meaning and it’s type. But prefer a name that’s based on the parameter’s meaning. Use Camel Casing (see 1.1.2)
+
+==== 1.2.6 Variable Names ====
+
+Counting variables are preferably called i, j, k, l, m, n when used in 'trivial' counting loops. (see below.) Use Camel Casing (see 1.1.2)
+
+Variable naming example instead of :
+
+{{{
+for (int i = 1; i < num; ++i) 
+{
+    meetsCriteria[i] = true;
+}
+for (int i = 2; i < num / 2; ++i) 
+{
+    int j = i + i;
+    while (j <= num) 
+    {
+        meetsCriteria[j] = false;
+        j += i;
+    }
+}
+for (int i = 0; i < num; ++i) 
+{
+    if (meetsCriteria[i]) 
+    {
+        Console.WriteLine(i + " meets criteria");
+    }
+}
+}}}
+
+try intelligent naming :
+
+{{{
+for (int primeCandidate = 1; primeCandidate < num; ++primeCandidate)
+{
+    isPrime[primeCandidate] = true;
+}
+for (int factor = 2; factor < num / 2; ++factor) 
+{
+    int factorableNumber = factor + factor;
+    while (factorableNumber <= num) 
+    {
+        isPrime[factorableNumber] = false;
+        factorableNumber += factor;
+    }
+}
+for (int primeCandidate = 0; primeCandidate < num; ++primeCandidate)
+{
+    if (isPrime[primeCandidate]) 
+    {
+        Console.WriteLine(primeCandidate + " is prime.");
+    }
+}
+}}}
+
+Note: Indexer variables generally should be called i, j, k etc. But in cases like this, it may make sense to reconsider this rule. In general, when the same counters or indexers are reused, give them meaningful names.
+
+==== 1.2.7 Method Names ====
+
+Name methods with verbs or verb phrases. Use Pascal Casing (see 1.1.2)
+
+==== 1.2.8 Property Names ====
+
+Name properties using nouns or noun phrases Use Pascal Casing (see 1.1.2) Consider naming a property with the same name as it’s type
+
+==== 1.2.9 Event Names ====
+
+Use generic event handler EventHandler`<T>` if possible. Name event handlers with the EventHandler suffix. Use two parameters named sender and e Use Pascal Casing (see 1.1.1) Name event argument classes with the EventArgs suffix. Name event names that have a concept of pre and post using the present and past tense. Consider naming events using a verb. 
+
+==== 1.2.10 Capitalization summary ====
+
+|| Type || Case || Notes ||
+|| Class/Struct || Pascal Casing || - ||
+|| Interface || Pascal Casing Starts with I || - ||
+|| Enum values || Pascal Casing || - ||
+|| Enum type || Pascal Casing || - || 
+|| Events || Pascal Casing || Use EventHandler`<T>` as prototype if possible ||
+|| Exception class || Pascal Casing || End with Exception ||
+|| public Fields || Pascal Casing || - || 
+|| Methods || Pascal Casing || - || 
+|| Namespace || Pascal Casing || - || 
+|| Property || Pascal Casing || - ||
+|| Protected/private Fields || Camel Casing || - || 
+|| Parameters || Camel Casing || - || 
+
+<br>
+<br>
+<br>
+<br>
+<br>
