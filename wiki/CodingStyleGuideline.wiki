@@ -2,8 +2,6 @@
 <br>
 <br>
 
-#summary One-sentence summary of this page.
-
 = Introduction =
 
 This document is a guideline for MSNPSharp's contributors. Anyone who submit their code for MSNPSharp should follow this guideline to keep MSNPSharp's source code have a unify coding style.
