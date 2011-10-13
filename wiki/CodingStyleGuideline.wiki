@@ -1,5 +1,3 @@
-#sidebar CodingStyleGuideline
-
 <br>
 = Introduction =
 
