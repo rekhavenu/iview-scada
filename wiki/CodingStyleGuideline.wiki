@@ -1,4 +1,5 @@
 #summary Coding Style Guideline for iView SCADA Contributors
+#labels Featured
 
 <br>
 = Introduction =
