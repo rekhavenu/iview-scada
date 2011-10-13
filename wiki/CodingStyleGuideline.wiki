@@ -1,5 +1,5 @@
 #summary Coding Style Guideline for iView SCADA Contributors
-#labels Featured,Phase-Requirements
+#labels Featured
 
 <br>
 = Introduction =
