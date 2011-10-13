@@ -1,4 +1,4 @@
-#sidebar NameOfPage
+#sidebar CodingStyleGuideline
 
 <br>
 = Introduction =
