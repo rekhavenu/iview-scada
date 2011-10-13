@@ -15,7 +15,7 @@ Most of the standards can be found in C# Coding Style Guide.
 === 1.1 Capitalization Styles ===
 ==== 1.1.1 Pascal Casing ====
 
-This convention capitalizes the first character of each word (as in TestCounter).
+This convention capitalizes the first character of each word (as in {{{TestCounter}}}).
 ==== 1.1.2 Camel Casing ====
 
 This convention capitalizes the first character of each word except the first one. E.g. testCounter.
@@ -71,7 +71,7 @@ Use Pascal Casing (see 1.1.1) Use I as prefix for the name, it is followed by a 
 
 Use Pascal Casing for enum value names and enum type names Don’t prefix (or suffix) a enum type or enum values Use singular names for enums Use plural name for bit fields. 
 
-==== 1.2.4 ReadOnly and Const Field Names ====
+==== 1.2.4 {{{ReadOnly}}} and Const Field Names ====
 
 Name static fields with nouns, noun phrases or abbreviations for nouns Use Pascal Casing (see 1.1.1)
 
@@ -145,7 +145,7 @@ Name properties using nouns or noun phrases Use Pascal Casing (see 1.1.2) Consid
 
 ==== 1.2.9 Event Names ====
 
-Use generic event handler {{{EventHandler<T>}}} if possible. Name event handlers with the {{{EventHandler}}} suffix. Use two parameters named sender and e Use Pascal Casing (see 1.1.1) Name event argument classes with the EventArgs suffix. Name event names that have a concept of pre and post using the present and past tense. Consider naming events using a verb. 
+Use generic event handler {{{EventHandler<T>}}} if possible. Name event handlers with the {{{EventHandler}}} suffix. Use two parameters named sender and e Use Pascal Casing (see 1.1.1) Name event argument classes with the {{{EventArgs}}} suffix. Name event names that have a concept of pre and post using the present and past tense. Consider naming events using a verb. 
 
 ==== 1.2.10 Capitalization summary ====
 
