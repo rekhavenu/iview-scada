@@ -145,7 +145,7 @@ Name properties using nouns or noun phrases Use Pascal Casing (see 1.1.2) Consid
 
 ==== 1.2.9 Event Names ====
 
-Use generic event handler EventHandler`<T>` if possible. Name event handlers with the EventHandler suffix. Use two parameters named sender and e Use Pascal Casing (see 1.1.1) Name event argument classes with the EventArgs suffix. Name event names that have a concept of pre and post using the present and past tense. Consider naming events using a verb. 
+Use generic event handler {{{EventHandler<T>}}} if possible. Name event handlers with the {{{EventHandler}}} suffix. Use two parameters named sender and e Use Pascal Casing (see 1.1.1) Name event argument classes with the EventArgs suffix. Name event names that have a concept of pre and post using the present and past tense. Consider naming events using a verb. 
 
 ==== 1.2.10 Capitalization summary ====
 
